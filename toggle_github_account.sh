@@ -21,8 +21,9 @@ switch_account() {
         ssh-add ~/.ssh/id_rsa_personal
         echo "Switched to personal GitHub account."
         
-        git config --global user.name "dundat11"
-        git config --global user.email "25328658+dundat11@users.noreply.github.com"
+        #! Add personal account details here
+        git config --global user.name ""
+        git config --global user.email ""
         echo "Updated global Git config to personal account."
 
     elif [ "$1" == "work" ]; then
@@ -30,8 +31,9 @@ switch_account() {
         ssh-add ~/.ssh/id_rsa_work
         echo "Switched to work GitHub account."
         
-        git config --global user.name "CengageCodespaceManager"
-        git config --global user.email "134904927+CengageCodespaceManager@users.noreply.github.com"
+        #! Add work account details here
+        git config --global user.name ""
+        git config --global user.email ""
         echo "Updated global Git config to work account."
 
     else
