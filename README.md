@@ -47,6 +47,10 @@ When cloning repositories you will need to use the SSH option. For repositories 
 git remote set-url origin git@github.com:username/repository.git
 ```
 
+## Setup
+
+Either hardcode your account details into the script, or setup environment variables using a .env file.
+
 ## Using the Toggle
 
 You can either add the _toggle_github_account.sh_ file to a specific directory or to your PATH.
