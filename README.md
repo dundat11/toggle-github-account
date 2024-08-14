@@ -35,6 +35,27 @@ ssh-keygen -t rsa -C "YOUR_WORK_ACCOUNT" -f ~/.ssh/id_rsa_work
 
 `ssh-add ~/.ssh/id_rsa_work`
 
+### Update the .ssh/config
+
+Use an editor of your choice to update the .ssh/config.
+
+```
+nano ~/.ssh/config
+```
+
+Update the config with your ssh values:
+
+```
+Host github.com-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_personal
+Host github.com-work
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_work
+```
+
 ## Adding SSH Keys To GitHub Accounts
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
